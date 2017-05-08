@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Order page, Order pizza online,Select your pizza,, base and extras.</title>
+		<meta charset="UTF-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<meta name="description" content="Best student pizzas in town. Order yor pizza online.">
+		<script src="js/clock.js" type="text/javascript"></script>
+		<script src="js/dropdown_menu.js" type="text/javascript"></script>
+		<script src="js/order.js" type="text/javascript"></script>
+		<script src="js/toTopBtn.js" type="text/javascript"></script>
+		<link href="css/styles.css" rel="stylesheet" type="text/css">
+		<link rel="icon" type="image/png" href="img/mini_pizza.png" />
+	</head>
+	<body>
+		<div id="wrapper">
+			<header>
+				<a href="index.html"><img src="img/logo.png" id="logo" alt="Solent pizza logo spinning nicely"></a>
+				<div id="date"></div>
+				<nav>
+					<ul>
+						<li>
+							<a href="">Menu</a>
+							<ul id="dropdown-menu">
+								<li><a href="margherita.html">Margherita</a></li>
+								<li><a href="pepperoni.html">Pepperoni</a></li>
+								<li><a href="hawaii.html">Hawaii</a></li>
+								<li><a href="newsolent.html">New Solent</a></li>
+								<li><a href="vegi.html">Vegi</a></li>
+							</ul>
+						</li>
+						<li><a href="order.html">Order</a></li>
+						<li><a href="offers.html">Offers</a></li>
+						<li><a href="gallery.html">Gallery</a></li>
+						<li><a href="contact.html">Contact Us</a></li>
+						<li><a href="about.html">About Us</a></li>
+					</ul>
+				</nav>
+			</header>
+			<section id="order">
+				<aside id="choices">
+					<p class="error"></p>
+					<form>
+						<fieldset id="pizza">
+							<legend>Select a pizza*</legend>
+							<div class="pizza_container">
+								<div>
+									<p>Our original Cheese & Tomato pizza with plenty of cheese</p>
+									<img src="img/gallery/pizzas/margherita.jpg" alt="pizza margherita">
+								</div>
+								<div>
+									<label>
+										<input type="radio" name="pizza" value="margherita">
+										<span class="name">Margherita</span>
+										<span class="price">5.00</span>
+									</label>
+								</div>
+							</div>							
+
+							<div class="pizza_container">
+								<div>
+									<p>Extra pepperoni and extra mozzarella cheese on our tomato sauce base.</p>
+									<img src="img/gallery/pizzas/pepperoni.jpg" alt="pepperoni pizza">
+								</div>
+								<div>
+									<label>
+										<input type="radio" name="pizza" value="pepperoni">
+										<span class="name">Pepperoni</span>
+										<span class="price">6.50</span>
+									</label>
+								</div>
+							</div>
+
+							<div class="pizza_container">
+								<div>
+									<p>Ham, pineapple, mushrooms. </p>
+									<img src="img/gallery/pizzas/hawaii.jpg" alt="hawaii pizza">
+								</div>
+								<div>
+									<label>
+										<input type="radio" name="pizza" value="hawaii">
+										<span class="name">Hawaii</span>
+										<span class="price">6.00</span>
+									</label>
+								</div>
+							</div>
+
+							<div class="pizza_container">
+								<div>
+									<p>Pepperoni, ham, bacon, mushrooms.</p>
+									<img src="img/gallery/pizzas/new_solent.jpg" alt="new solent pizza">
+								</div>
+								<div>
+									<label>
+										<input type="radio" name="pizza" value="new_solent">
+										<span class="name">New Solent</span>
+										<span class="price">6.00</span>
+									</label>
+								</div>
+							</div>
+
+							<div class="pizza_container">
+								<div>
+									<p>Red onions, green and red peppers, sweetcorn, mushrooms, tomatoes.</p>
+									<img src="img/gallery/pizzas/vegi.jpg" alt="vegi pizza">
+								</div>
+								<div>
+									<label>
+										<input type="radio" name="pizza" value="vegi">
+										<span class="name">Vegi</span>
+										<span class="price">5.75</span>
+									</label>
+								</div>
+							</div>
+						</fieldset>
+						<fieldset id="base">
+							<legend>Select a base*</legend>
+							<label>
+								<input type="radio" name="base" value="s">
+									<span class="name">Small</span>
+									<span class="price">0.00</span>
+							</label><br>
+							<label>
+								<input type="radio" name="base" value="m">
+									<span class="name">Medium</span>
+									<span class="price">2.50</span>
+							</label><br>
+							<label>
+								<input type="radio" name="base" value="l">
+									<span class="name">Large</span>
+									<span class="price">5.00</span>
+							</label><br>
+							<label>
+								<input type="radio" name="base" value="xl">
+									<span class="name">X-Large</span>
+									<span class="price">7.50</span>
+							</label><br>
+						</fieldset>
+						<fieldset id="topping">
+							<legend>Select one or more topping*</legend>
+							<label>
+								<input type="checkbox" name="topping" value="cheese">
+									<span class="name">Cheese</span>
+									<span class="price">0.20</span>
+							</label><br>
+							<label>
+								<input type="checkbox" name="topping" value="mushrooms">
+									<span class="name">Mushrooms</span>
+									<span class="price">0.40</span>
+							</label><br>
+							<label>
+								<input type="checkbox" name="topping" value="ham">
+									<span class="name">Ham</span>
+									<span class="price">0.50</span>
+							</label><br>
+							<label>
+								<input type="checkbox" name="topping" value="anchovies">
+									<span class="name">Anchovies</span>
+									<span class="price">0.60</span><br>
+							</label>
+						</fieldset>
+						<fieldset id="extras">
+							<legend>Extras</legend>
+							<label>
+								<input type="checkbox" name="extras" value="chips">
+									<span class="name">Chips</span>
+									<span class="price">1.50</span>
+							</label><br>
+							<label>
+								<input type="checkbox" name="extras" value="garlic_bread">
+									<span class="name">Garlic Bread</span>
+									<span class="price">2.00</span>
+							</label><br>
+							<label>
+								<input type="checkbox" name="extras" value="drink">
+									<span class="name">Coca Cola</span>
+									<span class="price">1.99</span>
+							</label><br>
+							<label>
+								<input type="checkbox" name="extras" value="sauce">
+									<span class="name">Garlic Sauce</span>
+									<span class="price">0.40</span>
+							</label><br>
+						</fieldset>
+						<fieldset class="center">
+							<legend>Delivery information</legend>
+							<input type="text" name="name" placeholder="Your name" class="left">
+							<input type="text" name="phone" placeholder="Phone number" class="right">
+							<div class="clear"></div>
+							<input type="text" name="address" placeholder="Your address" class="left">
+							<input type="text" name="post_code" placeholder="Your Post Code" class="right">
+						</fieldset>
+						<input type="reset" value="Reset" name="clear_form" class="left">
+						<input type="submit" value="Add to order!" name="add_to_order" class="right">
+						<div class="clear"></div>
+					</form>
+				</aside>
+				
+			</section>
+		</div><!-- [END] id="wrapper"-->
+		<div id="basket">
+			<img src="img/gallery/basket.png" alt="basket" id="basket_btn">
+			<div id="total_box">
+				<h2>Order summary</h2>
+				<p id="empty_basket">Nothing in your basket yet!</p>
+				<p id="total" class="right"></p>
+				<div class="clear"></div>
+			</div>
+		</div>
+		<div id="update"></div>
+		<aside id="to_top_btn">
+			<img src="img/toTopBtn.png" alt="back to top"/>
+		</aside>
+		<div class="clear"></div>
+		<footer>
+			<div class="left">
+				<p>
+					Pizza Solent - Southampton &copy;
+				</p>
+			</div>
+			<div class="right">
+				<ul id="mininav">
+					<li><a href="index.html">Menu</a></li>
+					<li><a href="order.html">Order</a></li>
+					<li><a href="offers.html">Offers</a></li>
+					<li><a href="gallery.html">Gallery</a></li>
+					<li><a href="contact.html">Contact Us</a></li>
+					<li><a href="about.html">About Us</a></li>
+				</ul>
+			</div>
+			<div class="clear"></div>
+		</footer>
+	</body>
+</html>
